@@ -36,7 +36,7 @@ module.exports = __toCommonJS(src_exports);
 
 // src/cache/index.ts
 var import_node_localstorage = require("node-localstorage");
-var localStorage = new import_node_localstorage.LocalStorage("cache");
+var localStorage = new import_node_localstorage.LocalStorage("/tmp");
 var storage = {
   set(key, value) {
     localStorage.setItem(key, JSON.stringify(value));

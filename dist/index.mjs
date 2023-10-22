@@ -1,6 +1,6 @@
 // src/cache/index.ts
 import { LocalStorage } from "node-localstorage";
-var localStorage = new LocalStorage("cache");
+var localStorage = new LocalStorage("/tmp");
 var storage = {
   set(key, value) {
     localStorage.setItem(key, JSON.stringify(value));
