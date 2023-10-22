@@ -1,7 +1,7 @@
 // Local storage configuration
 import { LocalStorage } from "node-localstorage";
 
-const localStorage = new LocalStorage("cache");
+const localStorage = new LocalStorage("/tmp");
 
 export const storage = {
   set(key: string, value: any) {
